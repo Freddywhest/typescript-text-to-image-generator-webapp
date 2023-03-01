@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <div class="form-container">
+        <form id="imageForm" autocomplete="off">
+            <div id="feedbackMsg"></div>
+            <div class="form-control">
+                <label for="name">Name of image</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-control">
+                <label for="number">Number of image <small>(max 10)</small></label>
+                <input type="text" id="number" value="1" name="number">
+            </div>
+            <div class="button">
+                <button id="btn" name="">Generate</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="result-preview" id="result">
+        <ul class="images">
+            <!-- <li>
+                <a target="_blank" href="https://fastly.picsum.photos/id/1080/500/300.jpg?hmac=gG0Z7fRsYqILasEZKNIVdJvl8rP1P0Qute4Vgk9XTL8">
+                    <img src="https://fastly.picsum.photos/id/1080/500/300.jpg?hmac=gG0Z7fRsYqILasEZKNIVdJvl8rP1P0Qute4Vgk9XTL8" alt="https://fastly.picsum.photos/id/1080/500/300.jpg?hmac=gG0Z7fRsYqILasEZKNIVdJvl8rP1P0Qute4Vgk9XTL8">
+                </a>
+            </li> -->
+        </ul>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
